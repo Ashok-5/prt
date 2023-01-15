@@ -1,0 +1,49 @@
+body{
+    background-image: url("new1.jpg");
+    background-size: cover;
+}
+*{
+    /* border: 2px solid green; */
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 7%;
+}
+
+a:hover{
+    background-color: rgba(57, 12, 78, 0.5);
+    color:white;
+    
+}
+a:focus{
+    background-color: rgb(100, 12, 214);
+    color: white;
+}
+a:active{
+    background-color:rgb(100, 12, 214) ;
+    color: white;
+}
+ul{
+    list-style:none;
+    width: 30%;
+    padding: 0;
+    background-color: rgba(48, 8, 66, 0.575);
+
+}
+a::first-letter{
+    font-size:larger;
+}
+#about{
+    margin-top: 100%;
+}
+.nav{
+    display: none;
+}
+.material-symbols-outlined{
+    color: white;
+}
+
+
