@@ -1,6 +1,16 @@
 body{
     background-image: url("new1.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow:unset;
+    height: 100vh;
+    
 }
 *{
     /* border: 2px solid green; */
@@ -22,28 +32,57 @@ a:focus{
     background-color: rgb(100, 12, 214);
     color: white;
 }
-a:active{
+/* a:active{
     background-color:rgb(100, 12, 214) ;
     color: white;
-}
+} */
 ul{
     list-style:none;
     width: 30%;
     padding: 0;
-    background-color: rgba(48, 8, 66, 0.575);
+    background-color: rgba(193, 186, 196, 0.575);
 
 }
 a::first-letter{
     font-size:larger;
 }
 #about{
-    margin-top: 100%;
+    /* margin-top: 100%; */
 }
 .nav{
     display: none;
+    position: relative;
+    left: 20px;
+    top: 25px;
 }
 .material-symbols-outlined{
     color: white;
+    cursor:grab;
+    font-size:xx-large;
+    padding: 20px;}
+.layer{
+    background-color: red;
+    padding: 1px;
+    width: 20px;
+    margin: 5px 0px 5px 0px;
 }
-
-
+#main{
+position: absolute;
+top:10px;
+left: 20px;
+}
+/* #main:focus > .-top{
+    margin-bottom: -7%;
+    transform:rotate(50deg);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}*/
+#main:focus > .-mid{
+    display: none;
+}
+/*#main:focus > .-bot{
+    margin-top: 0%;
+    transform:rotate(-50deg);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+} */
