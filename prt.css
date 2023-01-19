@@ -1,19 +1,88 @@
-body{
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+#hm{
     background-image: url("new1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow:unset;
     height: 100vh;
+    width: 188vh;
     
 }
-*{
-    /* border: 2px solid green; */
+.cntr{
+    background-color: violet;
+    height: 41%;
+    width: 21%;
+}
+.jv_cn{
+    position: relative;
+    left: 10%;
+    top: 5%;
+}
+.htm_cn{
+    position: relative;
+    left: 10%;
+    top: 10%;
+
+}
+.css_cn{
+    position: relative;
+    left: 60%;
+    top: -77%;
+}
+.js_cn{
+    position: relative;
+    left: 60%;
+    top: -72%;
+
+}
+#skl{
+    height: 100vh;
+    width: 188vh;
+    background-color: aqua;
+    /* z-index: 1; */
+}
+.skls{
+    height: 40%;
+    width: 20%;
+    background-color: blueviolet;
+    position:relative;
+    /* border-radius: 25% 0 25% 0; */
+
+}
+.jva{
+    /* left: 10%;
+    top: 5%; */
+    z-index: 1;
+    border-radius: 25% 25% 0 25%;
+
+}
+.html{
+    /* left: 10%;
+    top: 10%; */
+    z-index: 1;
+    border-radius: 25% 0 25% 25% ;
+
+}
+.css{
+    /* left: 60%;
+    top: -75%; */
+    z-index: 1;
+    border-radius:  25% 25% 25% 0;
+
+
+}
+.js{
+    /* left: 60%;
+    top: -70%; */
+    z-index: 1;
+    border-radius: 0 25% 25% 25%;
+
+
+
 }
 a{
     text-decoration: none;
@@ -28,38 +97,23 @@ a:hover{
     color:white;
     
 }
-a:focus{
-    background-color: rgb(100, 12, 214);
-    color: white;
-}
-/* a:active{
-    background-color:rgb(100, 12, 214) ;
-    color: white;
-} */
 ul{
     list-style:none;
     width: 30%;
     padding: 0;
-    background-color: rgba(193, 186, 196, 0.575);
+    background-color: rgba(184, 178, 187, 0.575);
 
 }
 a::first-letter{
-    font-size:larger;
-}
-#about{
-    /* margin-top: 100%; */
+    font-size:21px;
 }
 .nav{
     display: none;
-    position: relative;
+    position:absolute;
     left: 20px;
     top: 25px;
+    width: 70%;
 }
-.material-symbols-outlined{
-    color: white;
-    cursor:grab;
-    font-size:xx-large;
-    padding: 20px;}
 .layer{
     background-color: red;
     padding: 1px;
@@ -71,18 +125,13 @@ position: absolute;
 top:10px;
 left: 20px;
 }
-/* #main:focus > .-top{
-    margin-bottom: -7%;
-    transform:rotate(50deg);
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-}*/
-#main:focus > .-mid{
-    display: none;
+.stky{
+    position: sticky;
+    top: 17px;
+    z-index: 2;
 }
-/*#main:focus > .-bot{
-    margin-top: 0%;
-    transform:rotate(-50deg);
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-} */
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } */
