@@ -12,12 +12,17 @@
     width: 188vh;
     
 }
-.cntr{
+body{
+
+    /* margin-right: 20%; */
+
+}
+/* .cntr{
     background-color: violet;
     height: 41%;
     width: 21%;
-}
-.jv_cn{
+} */
+/* .jv_cn{
     position: relative;
     left: 10%;
     top: 5%;
@@ -38,11 +43,11 @@
     left: 60%;
     top: -72%;
 
-}
+} */
 #skl{
     height: 100vh;
     width: 188vh;
-    background-color: aqua;
+    background-color: rgb(0, 255, 255);
     /* z-index: 1; */
 }
 .skls{
@@ -50,39 +55,78 @@
     width: 20%;
     background-color: blueviolet;
     position:relative;
+    /* padding-right: 20%; */
     /* border-radius: 25% 0 25% 0; */
 
 }
 .jva{
-    /* left: 10%;
-    top: 5%; */
+    left: 3%;
+    top: 5%;
+    /* padding: 10%; */
     z-index: 1;
-    border-radius: 25% 25% 0 25%;
+    border-radius: 25% 25% 25% 25%;
 
 }
 .html{
-    /* left: 10%;
-    top: 10%; */
+    left: 3%;
+    top: 10%;
+    /* padding: 10%; */
     z-index: 1;
-    border-radius: 25% 0 25% 25% ;
+    border-radius: 25% 25% 25% 25% ;
 
 }
 .css{
-    /* left: 60%;
-    top: -75%; */
+    left: 53%;
+    top: -75%;
+    /* padding: 10%; */
     z-index: 1;
-    border-radius:  25% 25% 25% 0;
-
+    border-radius:  25% 25% 25% 25%;
+    /* margin-right: auto; */
 
 }
 .js{
-    /* left: 60%;
-    top: -70%; */
+    left: 53%;
+    top: -70%;
+    /* padding: 10%; */
     z-index: 1;
-    border-radius: 0 25% 25% 25%;
+    border-radius: 25% 25% 25% 25%;
+    /* margin-right:100%; */
+}
+.prgrs{
+    height: 80%;
+    width: 82%;
+    position: relative;
+    /* background-color:rgb(16, 2, 219); */
+    left: 135%;
+    top: 13%;
+}
+.inner{
+    border-radius: 50%;
+    height: 50%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0) inset;
 
-
-
+}
+.outer{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width:5%;
+    position:relative;
+    left: 0%;
+}
+svg{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 a{
     text-decoration: none;
