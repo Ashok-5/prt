@@ -14,10 +14,10 @@ let bo=true;
 function chg(){ 
     if(bo){
     document.querySelector(".-top").setAttribute("style",
-    "transform:rotate(50deg); transition:0.5s; margin-bottom:-7px;  transition-timing-function: ease-in-out;");
+    "transform:rotate(50deg); transition:0.5s; margin-bottom:-7px;  transition-timing-function: cubic-bezier(30,30,30,30);");
     document.querySelector(".-mid").style.display="none";
     document.querySelector(".-bot").setAttribute("style",
-    "transform:rotate(-50deg); transition:0.5s;  margin-bottom:0px; transition-timing-function: ease-in-out; ");
+    "transform:rotate(-50deg); transition:0.5s;  margin-bottom:0px; transition-timing-function: cubic-bezier(30,30,30,30); ");
     bo=false;
     }
     else{
@@ -28,12 +28,12 @@ function chg(){
             tp.style.transform="rotate(0deg)";
             tp.style.marginBottom="0px";
             tp.style.transition="0.5s";
-            tp.style.transitionTimingFunction="ease-in-out";
+            tp.style.transitionTimingFunction="cubic-bezier(30,30,30,30)";
         }
         if(bt.style.transform=="rotate(-50deg)"){
             bt.style.transform="rotate(0deg)";
             bt.style.transition="0.5s";
-            bt.style.transitionTimingFunction="ease-in-out";
+            bt.style.transitionTimingFunction="cubic-bezier(30,30,30,30)";
     
         }
         if(md.style.display=="none"){
@@ -44,3 +44,44 @@ function chg(){
     }
     
 }
+
+let percent_Jav = document.getElementById("J_no");
+let cnt_Jav = 0;
+setInterval(() => {
+  if (cnt_Jav == 40) {
+    clearInterval();
+  } else {
+    cnt_Jav += 1;
+    percent_Jav.innerHTML = cnt_Jav + "%";
+  }
+}, 49);
+let percent_h = document.getElementById("h_no");
+let cnt_h = 0;
+setInterval(() => {
+  if (cnt_h == 80) {
+    clearInterval();
+  } else {
+    cnt_h += 1;
+    percent_h.innerHTML = cnt_h + "%";
+  }
+}, 25);
+let percent_c = document.getElementById("c_no");
+let cnt_c = 0;
+setInterval(() => {
+  if (cnt_c == 70) {
+    clearInterval();
+  } else {
+    cnt_c += 1;
+    percent_c.innerHTML = cnt_c + "%";
+  }
+}, 28);
+let percent_j = document.getElementById("j_no");
+let cnt_j = 0;
+setInterval(() => {
+  if (cnt_j == 30) {
+    clearInterval();
+  } else {
+    cnt_j += 1;
+    percent_j.innerHTML = cnt_j + "%";
+  }
+}, 66);

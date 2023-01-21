@@ -29,7 +29,7 @@
     
     
     <div id="skl">
-      <!-- <div class="top"> -->
+      <div class="tp">
         <div class="outer_all jv">
           <div class="tilt"><div class="skls jva"></div></div>
           <div class="jva_pr prgrs">
@@ -60,6 +60,8 @@
             </svg>
           </div>
         </div>
+
+
         <div class="outer_all ht">
           <div class="tilt"><div class="skls html"></div></div>
           <div class="html_pr prgrs">
@@ -84,13 +86,11 @@
             </svg>
           </div>
         </div>
-      </div>
-      <!-- </div>
-      <div class="down"> -->
 
+      </div>                  <!-- tp end    -->
 
-
-        <!-- <div class="outer_all cs">
+      <div class="bt">
+        <div class="outer_all cs">
           <div class="tilt"><div class="skls css"></div></div>
           <div class="css_pr prgrs">
             <div class="outer">
@@ -114,6 +114,9 @@
             </svg>
           </div>
         </div>
+    
+    
+    
         <div class="outer_all jt">
           <div class="tilt"><div class="skls js"></div></div>
           <div class="html_pr prgrs">
@@ -143,76 +146,9 @@
               />
             </svg>
           </div>
-        </div> -->
-
-
-
-      <!-- </div> -->
-  
-    <script>
-      let percent_Jav = document.getElementById("J_no");
-      let cnt_Jav = 0;
-      setInterval(() => {
-        if (cnt_Jav == 40) {
-          clearInterval();
-        } else {
-          cnt_Jav += 1;
-          percent_Jav.innerHTML = cnt_Jav + "%";
-        }
-      }, 49);
-      let percent_h = document.getElementById("h_no");
-      let cnt_h = 0;
-      setInterval(() => {
-        if (cnt_h == 80) {
-          clearInterval();
-        } else {
-          cnt_h += 1;
-          percent_h.innerHTML = cnt_h + "%";
-        }
-      }, 25);
-      let percent_c = document.getElementById("c_no");
-      let cnt_c = 0;
-      setInterval(() => {
-        if (cnt_c == 70) {
-          clearInterval();
-        } else {
-          cnt_c += 1;
-          percent_c.innerHTML = cnt_c + "%";
-        }
-      }, 28);
-      let percent_j = document.getElementById("j_no");
-      let cnt_j = 0;
-      setInterval(() => {
-        if (cnt_j == 30) {
-          clearInterval();
-        } else {
-          cnt_j += 1;
-          percent_j.innerHTML = cnt_j + "%";
-        }
-      }, 66);
-    </script>
-
+        </div>
+    </div>
     <script src="prt.js"></script>
   </body>
 </html>
 
-<!-- 
-<div class="outer_all jt">
-    <div class="skls js"></div>
-    <div class="js_pr prgrs">
-        <div class="outer">
-            <div class="inner">
-                <div id="j_no"></div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-            <defs>
-                <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#e91e63" />
-                    <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-            </defs>
-            <circle class="J" cx="80" cy="80" r="70" stroke-linecap="round" />
-        </svg>
-    </div>
-</div> -->

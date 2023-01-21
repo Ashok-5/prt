@@ -10,18 +10,26 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    display: flex;
     
 }
 #skl{
     height: 100vh;
     width: 100%;
     background-color: rgb(0, 204, 255);
+    /* display: flex; */
+}
+.tp {
+    display:flex;
+    height: 50%;
+}
+.bt{
     display: flex;
+    height: 50%;
 }
 .outer_all{
-    height: 47%;
+    height: 100%;      /* 47*/
     width: 50%;
-    /* border: 1px solid rgb(0, 68, 255); */
     position: relative;
     display: flex;
     align-items: center;
@@ -35,7 +43,7 @@
     justify-content: center;
 }
 
-.skls{
+.skls {
     height: 80%;
     width: 80%;
     background-color: blueviolet;
@@ -44,13 +52,12 @@
     border-radius: 25% 25% 25% 25%;
 
 }
-.jva .html .css .js{
-    z-index: 1;
-    border-radius: 25% 25% 25% 25%;
+/* .jva .html .css .js{
+     z-index: 1;
+    border-radius: 25% 25% 25% 25%; 
 
-}
-
-.prgrs{
+} */
+.prgrs {
     height: 80%;
     width: 82%;
     position: relative;
@@ -76,7 +83,6 @@
     border-radius: 50%;
     padding: 20px;
     box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
-    /* background: #000; */
 }
 
 
@@ -108,10 +114,8 @@ circle{
 }
 svg{
     position: absolute;
-    left:80.3px;
-     /* height: 22vh; */
-    /* width: auto;  */
-    top: 62px;
+    left:64px;
+    top: 69.5px;
 }
 @keyframes ani_J {
    100% {
