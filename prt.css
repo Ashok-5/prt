@@ -2,132 +2,137 @@
      margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    /* border: 1px solid rgb(255, 0, 0); */
+    /* border: 1px solid red; */
 }
 #hm{
     background-image: url("new1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 188vh;
+    width: 100%;
     
 }
-body{
-
-    /* margin-right: 20%; */
-
-}
-/* .cntr{
-    background-color: violet;
-    height: 41%;
-    width: 21%;
-} */
-/* .jv_cn{
-    position: relative;
-    left: 10%;
-    top: 5%;
-}
-.htm_cn{
-    position: relative;
-    left: 10%;
-    top: 10%;
-
-}
-.css_cn{
-    position: relative;
-    left: 60%;
-    top: -77%;
-}
-.js_cn{
-    position: relative;
-    left: 60%;
-    top: -72%;
-
-} */
 #skl{
     height: 100vh;
-    width: 188vh;
-    background-color: rgb(0, 255, 255);
-    /* z-index: 1; */
+    width: 100%;
+    background-color: rgb(0, 204, 255);
+    display: flex;
 }
+.outer_all{
+    height: 47%;
+    width: 50%;
+    /* border: 1px solid rgb(0, 68, 255); */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tilt{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .skls{
-    height: 40%;
-    width: 20%;
+    height: 80%;
+    width: 80%;
     background-color: blueviolet;
     position:relative;
-    /* padding-right: 20%; */
-    /* border-radius: 25% 0 25% 0; */
+    padding-right: 20%;
+    border-radius: 25% 25% 25% 25%;
 
 }
-.jva{
-    left: 3%;
-    top: 5%;
-    /* padding: 10%; */
+.jva .html .css .js{
     z-index: 1;
     border-radius: 25% 25% 25% 25%;
 
 }
-.html{
-    left: 3%;
-    top: 10%;
-    /* padding: 10%; */
-    z-index: 1;
-    border-radius: 25% 25% 25% 25% ;
 
-}
-.css{
-    left: 53%;
-    top: -75%;
-    /* padding: 10%; */
-    z-index: 1;
-    border-radius:  25% 25% 25% 25%;
-    /* margin-right: auto; */
-
-}
-.js{
-    left: 53%;
-    top: -70%;
-    /* padding: 10%; */
-    z-index: 1;
-    border-radius: 25% 25% 25% 25%;
-    /* margin-right:100%; */
-}
 .prgrs{
     height: 80%;
     width: 82%;
     position: relative;
-    /* background-color:rgb(16, 2, 219); */
-    left: 135%;
-    top: 13%;
-}
-.inner{
-    border-radius: 50%;
-    height: 50%;
-    width: 80%;
-    position: relative;
-    left: 10%;
-    top: 10%;
-    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0) inset;
-
-}
-.outer{
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
-}
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width:5%;
-    position:relative;
-    left: 0%;
-}
-svg{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 0;
     top: 0;
 }
+.inner{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+    /* background: #000; */
+}
+
+
+
+
+
+
+
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width:20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+
+.J{
+    animation: ani_J 2s linear forwards;
+}
+.H{
+    animation: ani_H 2s linear forwards;
+}
+.C{
+    animation: ani_C 2s linear forwards;
+}
+.jt{
+    animation: ani_Jt 2s linear forwards;
+}
+svg{
+    position: absolute;
+    left:80.3px;
+     /* height: 22vh; */
+    /* width: auto;  */
+    top: 62px;
+}
+@keyframes ani_J {
+   100% {
+    stroke-dashoffset: 283;           /*  472-472*40%  */
+    } 
+}
+@keyframes ani_H {
+    100% {
+     stroke-dashoffset: 94;             /*  472-472*40%  */
+     } 
+ }
+ @keyframes ani_C {
+    100% {
+     stroke-dashoffset: 141;            /*  472-472*40%  */
+     } 
+ }
+ @keyframes ani_Jt {
+    100% {  
+     stroke-dashoffset: 330;             /*  472-472*40%  */
+     } 
+ }
 a{
     text-decoration: none;
     text-align: center;
@@ -174,8 +179,3 @@ left: 20px;
     top: 17px;
     z-index: 2;
 }
-/* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
