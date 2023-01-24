@@ -41,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform-style: preserve-3d;
 }
 
 .skls {
@@ -115,8 +116,6 @@ circle{
 }
 svg{
     position: absolute;
-    left:64px;
-    top: 69.5px;
 }
 @keyframes ani_J {
    100% {
