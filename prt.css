@@ -1,3 +1,32 @@
+#hm{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 50px;
+    letter-spacing: 7px;
+    cursor:pointer;
+    text-transform: uppercase;
+    /* color: black; */
+  }
+  
+  h1 {
+    padding: 64px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    animation: shine 3s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  @keyframes shine {
+    100% {
+      background-position: 600px;
+    }
+  }
 *{
      margin: 0;
     padding: 0;
@@ -6,6 +35,7 @@
 }
 #hm{
     background-image: url("new1.jpg");
+    /* z-index: 1; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -17,7 +47,6 @@
     height: 100vh;
     width: 100%;
     background-color: rgb(0, 204, 255);
-    /* display: flex; */
 }
 .tp {
     display:flex;
@@ -47,18 +76,32 @@
 .skls {
     height: 80%;
     width: 80%;
-    background-color: blueviolet;
     position:relative;
     padding-right: 20%;
     border-radius: 25% 25% 25% 25%;
     box-shadow: 0px 0px 2px 2px black, 0px 0px 50px ;
+    object-fit: fill;
+
 
 }
-/* .jva .html .css .js{
-     z-index: 1;
-    border-radius: 25% 25% 25% 25%; 
-
-} */
+.jva{
+    background-image: url("jva.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.html{
+    background-image: url("htm.webp");
+}
+.js{
+    background-image: url("js.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;   
+}
+.css{
+    background-image: url("css.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}   
 .prgrs {
     height: 80%;
     width: 82%;
@@ -86,14 +129,6 @@
     padding: 20px;
     box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
 }
-
-
-
-
-
-
-
-
 circle{
     fill: none;
     stroke: url(#GradientColor);
@@ -101,19 +136,19 @@ circle{
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
 }
-
-.J{
+ .J{
     animation: ani_J 2s linear forwards;
 }
-.H{
+.H {
     animation: ani_H 2s linear forwards;
 }
-.C{
+ .C{
     animation: ani_C 2s linear forwards;
 }
-.jt{
+ .jt{
     animation: ani_Jt 2s linear forwards;
 }
+
 svg{
     position: absolute;
 }

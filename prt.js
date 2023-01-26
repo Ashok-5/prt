@@ -91,8 +91,9 @@ var out=document.querySelectorAll(".tilt");
 var card=document.querySelectorAll(".skls");
 for(d=0;d<out.length;d++){
   out[d].addEventListener('mousemove',(e) => {
-    //  let xaxis=(window.innerWidth / 4 - e.pageX);
-    //  let yaxis=(window.innerHeight / 4 - e.pageY);
-    //  card.style.transform=`rotateX($(xaxis)deg) rotateY($(xaxis)deg) `
 });
+}
+
+function rld(){
+  location.reload();
 }

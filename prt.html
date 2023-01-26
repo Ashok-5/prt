@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>prt</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    </style>
     <link rel="stylesheet" href="prt.css" />
-    <style></style>
   </head>
   <body>
     <div class="stky">
@@ -18,20 +20,22 @@
       <nav class="nav">
         <ul>
           <li><a href="#hm">Home</a></li>
-          <li><a href="#skl">Skills</a></li>
+          <li><a href="#skl" onclick="rld();">Skills</a></li>
           <li><a href="#">Co-Curricular</a></li>
           <li><a href="#">Extra-Curricular</a></li>
           <li><a href="#about">Profile</a></li>
         </ul>
       </nav>
     </div>
-    <div id="hm"></div>
+    <div id="hm">  
+      <h1>Hey It's Ashok</h1> 
+    </div>
     
     
     <div id="skl">
       <div class="tp">
         <div class="outer_all jv">
-          <div class="tilt"><div class="skls jva"></div></div>
+          <div class="tilt"><div class="skls jva" data-tilt></div></div>
           <div class="jva_pr prgrs">
             <div class="outer">
               <div class="inner">
@@ -63,7 +67,7 @@
 
 
         <div class="outer_all ht">
-          <div class="tilt"><div class="skls html"></div></div>
+          <div class="tilt"><div class="skls html" data-tilt></div></div>
           <div class="html_pr prgrs">
             <div class="outer">
               <div class="inner">
@@ -78,8 +82,8 @@
             >
               <defs>
                 <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
+                  <stop offset="0%" stop-color="#e91e13" />
+                  <stop offset="100%" stop-color="#673a17" />
                 </linearGradient>
               </defs>
               <circle class="H" cx="80" cy="80" r="70" stroke-linecap="round" />
@@ -91,7 +95,7 @@
 
       <div class="bt">
         <div class="outer_all cs">
-          <div class="tilt"><div class="skls css"></div></div>
+          <div class="tilt"><div class="skls css" data-tilt></div></div>
           <div class="css_pr prgrs">
             <div class="outer">
               <div class="inner">
@@ -118,7 +122,7 @@
     
     
         <div class="outer_all jt">
-          <div class="tilt"><div class="skls js"></div></div>
+          <div class="tilt"><div class="skls js" data-tilt></div></div>
           <div class="html_pr prgrs">
             <div class="outer">
               <div class="inner">
@@ -149,6 +153,7 @@
         </div>
     </div>
     <script src="prt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   </body>
 </html>
 
