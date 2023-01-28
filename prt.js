@@ -97,3 +97,4 @@ for(d=0;d<out.length;d++){
 function rld(){
   location.reload();
 }
+
