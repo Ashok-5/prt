@@ -45,7 +45,10 @@
 #skl{
     height: 100vh;
     width: 100%;
-    background:radial-gradient(rgb(4, 4, 245),rgb(15, 15, 214),rgb(26, 26, 153),rgb(16, 16, 88));
+    /* background:radial-gradient(rgb(4, 4, 245),rgb(15, 15, 214),rgb(26, 26, 153),rgb(16, 16, 88)); */
+    background-image: url(SKILLS.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .tp {
     display:flex;
@@ -84,20 +87,23 @@
 
 }
 .jva{
-    background-image: url("jva.jpg");
+    background-image: url("JAVA.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .html{
-    background-image: url("htm.webp");
+    background-image: url("hTmL.avif");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
 }
 .js{
-    background-image: url("js.jpg");
+    background-image: url("JS.avif");
     /* background-repeat: no-repeat; */
     background-size: cover;   
 }
 .css{
-    background-image: url("css.jpg");
+    background-image: url("CSS.avif");
     background-repeat: no-repeat;
     background-size: cover;   
 }   
