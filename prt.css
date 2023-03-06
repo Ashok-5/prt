@@ -34,9 +34,8 @@
     /* border: 1px solid red; */
 }
 #hm{
-    background-image: url("new1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("new1.jpg") no-repeat center ;
+    background-size:cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -46,14 +45,14 @@
     height: 100vh;
     width: 100%;
     /* background:radial-gradient(rgb(4, 4, 245),rgb(15, 15, 214),rgb(26, 26, 153),rgb(16, 16, 88)); */
-    background-image: url(SKILLS.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(SKILLS.avif) no-repeat center;
+    background-size:cover;
 }
 #co_cur{
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background: url(cisco-sys.jpg) no-repeat center;
+    background-size: cover;
 
 }
 .tp {
@@ -93,24 +92,19 @@
 
 }
 .jva{
-    background-image: url("JAVA.jpg");
-    background-repeat: no-repeat;
+    background: url("JAVA.jpg") no-repeat center;
     background-size: cover;
 }
 .html{
-    background-image: url("hTmL.avif");
-    /* background-repeat: no-repeat; */
+    background: url("hTmL.avif") no-repeat center;
     background-size: cover;
-    
 }
 .js{
-    background-image: url("JS.avif");
-    /* background-repeat: no-repeat; */
+    background: url("JS.avif") no-repeat center;
     background-size: cover;   
 }
 .css{
-    background-image: url("CSS.avif");
-    background-repeat: no-repeat;
+    background: url("CSS.avif") no-repeat center;
     background-size: cover;   
 }   
 .prgrs {
