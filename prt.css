@@ -34,12 +34,29 @@
     /* border: 1px solid red; */
 }
 #hm{
-    background: url("new1.jpg") no-repeat center ;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#9581f4,#23a6d5,#23d5ab);
+    animation: gradient 10s ease infinite;
+    /* width: 40vw;
+    height: 20vw; */
+    background-size:400% 400% ;
+
+    /* background: url("new1.jpg") no-repeat center ;
     background-size:cover;
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: flex; */
     
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 #skl{
     height: 100vh;
